@@ -1,0 +1,27 @@
+<html>
+{%load static%}
+<head>
+    <title>Static view</title>
+    <link rel = "stylesheet" href = "{% static "css/1.css" %}"/>
+</head>
+<body bgcolor="#def1ff">
+    <center><h1>{{name}}'s favourites</h1></center>
+    <div>
+        <h2>Players : {{player}}</h2>
+        <h3><a href="https://en.wikipedia.org/wiki/AB_de_Villiers">click here</a></h3>
+        <img src="{%static "images/ABD-SIX.webp" %}"/>
+    </div>
+    <br>
+    <div>
+        <h2>Animal : {{animal}}</h2>
+        <h3><a href="https://en.wikipedia.org/wiki/Lion">click here</a></h3>
+        <img src="{%static "images/download.jpeg" %}"/>
+    </div>
+    <br>
+    <div>
+        <h2>Subject : {{subject}}</h2>
+        <h3><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">click here</a></h3>
+        <img src="{%static "images/python.jpg" %}"/>
+    </div>
+</body>
+</html>
